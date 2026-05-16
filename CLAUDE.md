@@ -102,3 +102,59 @@ git checkout [commit-hash]
 - Skip the HTF alignment check (5m alone is not enough)
 - Trade during FOMC, NFP, CPI — mark as NO TRADE in the morning scan
 - Use this on a live account until 50-trade backtest shows expectancy > 0.3R
+
+---
+
+## Thunder Trader Bot (Local Machine)
+
+Separate Python bot running on user's desktop. Connects to Kraken via WebSocket.
+Code lives locally — NOT in this repo. Logs can be pasted here for analysis.
+
+### Architecture
+- **7-agent consensus network**: BB, PATTERN, DIVERGENCE, MOMENTUM, TREND, WHALE, KRONOS
+- **Kronos ML model**: NeoQuasar/Kronos-small + NeoQuasar/Kronos-Tokenizer-base (HuggingFace)
+- **Minimum agents for quorum**: 3 of 7 must respond
+- **Position sizing**: Kelly criterion (currently hardcoded floor=0.57)
+- **Exchange**: Kraken, pair XBT/USDT, paper trading mode
+- **Timeframe**: 15-minute candles
+
+### Known Bugs (diagnosed from logs, 2026-05-16)
+
+**BUG 1 — R:R hardcoded at 1.39, blocks ALL trades** ← fix this first
+- TP = SL × 1.389 on every bar (not a structural level)
+- Min R:R requirement = 2.0 → no trade can ever execute
+- SL calculated from upper Bollinger Band which drifts upward while price falls
+- Fix: set TP to next structural support/resistance, OR lower min_rr to 1.5
+
+**BUG 2 — Agent dropout kills quorum**
+- DIVERGENCE + WHALE agents silent all session after asyncio crash at 05:40
+- Windows `_ProactorBasePipeTransport` / `ConnectionResetError [WinError 10054]`
+- `too_few_agents(2<3)` blocked 20 of 32 candles
+- Fix: coroutine health monitor, auto-restart dead agents
+
+**BUG 3 — Kronos bullish bias on bearish day**
+- Predicted positive returns on 30/32 candles during -1.8% BTC session
+- Likely sign error or abs() call in prediction pipeline
+- Fix: audit kronos_predict() for negation or abs() on output
+
+**BUG 4 — score=-0.991 is a sentinel value**
+- Appears exactly 11 times — hardcoded fallback when <3 agents respond
+- Not a real consensus calculation, corrupts analytics
+
+**BUG 5 — vol=0.0 data feed dropout**
+- Seen at 09:45 candle — no guard clause
+
+**BUG 6 — Kelly floor hardcoded at 0.57**
+- Same value every bar regardless of market conditions
+
+### Missed Trades (2026-05-16)
+- 06:45 SHORT (BB+PATTERN+MOMENTUM, score -2.226) — price dropped $1,204 after
+- 08:30, 08:45, 09:00 — three consecutive SHORTs blocked by R:R bug
+- 12:15 — volume 10× normal, price +$300 recovery after
+
+### To Fix — Share These Code Sections
+Paste these directly into chat for Claude to fix:
+1. The TP calculation function (the one producing 1.389× ratio)
+2. The agent runner / asyncio task setup
+3. `kronos_predict()` or wherever the model output is processed
+4. The quorum / consensus scoring function
