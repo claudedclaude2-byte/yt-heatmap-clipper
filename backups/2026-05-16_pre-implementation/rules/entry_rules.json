@@ -1,0 +1,69 @@
+{
+  "_comment": "Thunder Trader — entry rules. Claude reads this before every signal decision.",
+  "_version": "1.0.0",
+
+  "instruments": {
+    "futures": ["CME_MINI:NQ1!", "CME_MINI:ES1!", "COMEX:GC1!", "NYMEX:CL1!"],
+    "crypto":  ["BINANCE:BTCUSDT", "BINANCE:ETHUSDT"],
+    "primary_timeframe": "5",
+    "htf_timeframe": "60"
+  },
+
+  "session": {
+    "timezone": "America/New_York",
+    "futures_hours": { "open": "09:30", "close": "16:00" },
+    "avoid_minutes_around_news": 15,
+    "avoid_first_bar": true,
+    "avoid_last_30_min": true
+  },
+
+  "trend_filter": {
+    "require_full_ema_stack": true,
+    "ema_lengths": [8, 13, 21, 34],
+    "htf_must_agree": true,
+    "htf_check": "EMA 21 on 1h must slope in same direction as 5m ribbon"
+  },
+
+  "momentum_filter": {
+    "adx_minimum": 22,
+    "adx_period": 14,
+    "adx_note": "Below 22 = ranging market. Do NOT trade."
+  },
+
+  "volume_filter": {
+    "signal_bar_volume_multiplier": 1.4,
+    "volume_sma_period": 20,
+    "volume_note": "Volume on signal bar must be > 1.4x the 20-bar average."
+  },
+
+  "entry": {
+    "trigger": "First bar where full EMA stack flips AND adx >= 22 AND volume >= 1.4x avg AND in session",
+    "entry_type": "market_on_next_bar_open",
+    "max_simultaneous_positions": 1,
+    "max_daily_trades": 3
+  },
+
+  "risk": {
+    "stop_loss": "1.5 × ATR(14) from entry",
+    "take_profit_r": 3.0,
+    "max_account_risk_per_trade_pct": 1.0,
+    "max_daily_drawdown_pct": 3.0,
+    "halt_trading_if_daily_dd_hit": true
+  },
+
+  "exit_rules": [
+    "Hit 3:1 R:R target",
+    "EMA ribbon flips opposite direction",
+    "Daily drawdown limit hit",
+    "End of session (15:45 EST hard close)"
+  ],
+
+  "never_trade": [
+    "FOMC announcements",
+    "NFP (first Friday of month, 08:30 EST)",
+    "CPI release days (check economic calendar)",
+    "ADX < 22",
+    "Volume < 1.4x average on signal bar",
+    "First and last 15 minutes of session"
+  ]
+}
