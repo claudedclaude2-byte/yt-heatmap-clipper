@@ -1,0 +1,13 @@
+.env
+*.json
+!.env.example
+clips/
+composed/
+logs/
+data/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+youtube_token.json
+client_secrets.json
