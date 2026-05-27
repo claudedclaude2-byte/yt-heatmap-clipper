@@ -1,0 +1,22 @@
+{
+  "name": "thunder-trader-mcp",
+  "version": "0.1.0",
+  "description": "TradingView MCP server — Claude Code controls TradingView Desktop via CDP",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "health": "tsx src/cdp/client.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "puppeteer-core": "^22.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0"
+  }
+}
