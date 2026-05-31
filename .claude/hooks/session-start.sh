@@ -6,28 +6,38 @@ if [ "${CLAUDE_CODE_REMOTE:-}" != "true" ]; then
 fi
 
 SKILLS_DIR="${HOME}/.claude/skills"
-REPO_CACHE="${HOME}/.claude/anthropics-skills-cache"
-REPO_URL="https://github.com/anthropics/skills"
-
 mkdir -p "$SKILLS_DIR"
 
-# Clone or update the anthropics/skills repo
-if [ -d "${REPO_CACHE}/.git" ]; then
-  GIT_TERMINAL_PROMPT=0 git -C "$REPO_CACHE" pull --ff-only --quiet 2>/dev/null || true
-else
-  GIT_TERMINAL_PROMPT=0 git clone --quiet --depth=1 "$REPO_URL" "$REPO_CACHE"
-fi
+install_skills_from_repo() {
+  local repo_url="$1"
+  local cache_dir="$2"
+  local skills_subdir="$3"
 
-# Copy each skill directory to ~/.claude/skills/ if not already present
-if [ -d "${REPO_CACHE}/skills" ]; then
-  for skill_dir in "${REPO_CACHE}/skills"/*/; do
-    if [ -f "${skill_dir}SKILL.md" ]; then
-      skill_name=$(basename "$skill_dir")
-      target="${SKILLS_DIR}/${skill_name}"
-      if [ ! -d "$target" ]; then
-        cp -r "$skill_dir" "$target"
+  if [ -d "${cache_dir}/.git" ]; then
+    GIT_TERMINAL_PROMPT=0 git -C "$cache_dir" pull --ff-only --quiet 2>/dev/null || true
+  else
+    GIT_TERMINAL_PROMPT=0 git clone --quiet --depth=1 "$repo_url" "$cache_dir"
+  fi
+
+  if [ -d "${cache_dir}/${skills_subdir}" ]; then
+    for skill_dir in "${cache_dir}/${skills_subdir}"/*/; do
+      if [ -f "${skill_dir}SKILL.md" ]; then
+        skill_name=$(basename "$skill_dir")
+        cp -rf "$skill_dir" "${SKILLS_DIR}/${skill_name}"
         echo "Installed skill: ${skill_name}"
       fi
-    fi
-  done
-fi
+    done
+  fi
+}
+
+# Install all skills from anthropics/skills
+install_skills_from_repo \
+  "https://github.com/anthropics/skills" \
+  "${HOME}/.claude/anthropics-skills-cache" \
+  "skills"
+
+# Install frontend-design plugin from anthropics/claude-plugins-official
+install_skills_from_repo \
+  "https://github.com/anthropics/claude-plugins-official" \
+  "${HOME}/.claude/anthropics-plugins-cache" \
+  "plugins/frontend-design/skills"
