@@ -41,3 +41,10 @@ install_skills_from_repo \
   "https://github.com/anthropics/claude-plugins-official" \
   "${HOME}/.claude/anthropics-plugins-cache" \
   "plugins/frontend-design/skills"
+
+# Install claude-mem (persistent memory across sessions)
+if ! npx --yes claude-mem --version &>/dev/null; then
+  npx --yes claude-mem install 2>&1 | grep -E "OK|successfully|Error|Warning" || true
+else
+  npx --yes claude-mem install 2>&1 | grep -E "OK|successfully|Error|Warning" || true
+fi
