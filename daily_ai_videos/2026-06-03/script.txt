@@ -1,0 +1,40 @@
+DAILY AI VIDEO SCRIPT — June 3, 2026
+====================================
+
+HOOK (0–5s):
+"Three things happened in AI today, and one of them could change how you build software."
+
+---
+
+SEGMENT 1 — MICROSOFT BUILD 2026 (5–30s):
+"At Microsoft Build, the company open-sourced the Windows Agent Framework under an MIT license.
+This means any developer can now build autonomous agents that run natively on Windows — no Azure required.
+They also announced Project Polaris — Microsoft's own AI model — which will replace GPT-4 as the default in GitHub Copilot starting August.
+And Foundry Local hit general availability, so you can run full AI inference on-device without touching the cloud."
+
+---
+
+SEGMENT 2 — ANTHROPIC IPO + CLAUDE MYTHOS (30–55s):
+"Anthropic quietly filed a confidential IPO with the SEC — targeting a listing in October at a valuation near a trillion dollars.
+But the bigger story is Claude Mythos.
+Anthropic just expanded their cybersecurity AI to 150 organizations across 15 countries — covering power grids, hospitals, and water systems.
+In early testing, Mythos found over ten thousand high-severity security vulnerabilities that humans missed."
+
+---
+
+SEGMENT 3 — GITHUB REPO OF THE DAY (55–75s):
+"And the GitHub repo worth checking today: Bumblebee, by Perplexity AI.
+It's a supply chain scanner — written in Go, zero dependencies — that checks your packages, MCP servers, and editor extensions for suspicious or compromised code.
+With supply chain attacks up, this one is actually useful."
+
+---
+
+OUTRO (75–83s):
+"Follow for daily AI tools, repos, and automation updates — dropped every day."
+
+---
+
+TOTAL ESTIMATED DURATION: ~83 seconds
+FORMAT: Vertical 9:16
+LANGUAGE: English
+VOICE: en-US-GuyNeural (Microsoft Edge TTS)
