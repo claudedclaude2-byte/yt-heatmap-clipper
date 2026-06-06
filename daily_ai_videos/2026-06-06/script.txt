@@ -1,0 +1,66 @@
+DAILY AI VIDEO SCRIPT — June 6, 2026
+=====================================
+NICHE   : AI Tools × Make Money Online
+FORMAT  : 9:16 Vertical (YouTube Shorts / TikTok / Reels)
+RUNTIME : ~75 seconds
+FEATURE : scripthook — **highlighted keywords** → yellow captions + slide chips
+
+WHY THIS NICHE TODAY
+--------------------
+• Make Money Online CPM: $15–20 (2nd highest on YouTube)
+• AI Tools search volume: surging June 2026 (people searching "how to use AI for marketing")
+• Fastest-growing faceless niche: 15–21x growth signals
+• Evergreen + trending simultaneously = max replay value
+
+
+HOOK (0–5s):
+"These **5 AI tools** are making people **$500 a day** right now — and they're completely **free**."
+
+---
+
+TOOL 1 — CLAUDE BY ANTHROPIC (5–22s):
+"Number one: **Claude by Anthropic**. Use it to write **AI automation scripts**,
+build **micro-SaaS tools**, or create done-for-you workflows for local businesses.
+Freelancers are charging **$500 per project** for work Claude drafts in under ten minutes."
+
+---
+
+TOOL 2 — CANVA AI (22–38s):
+"Number two: **Canva AI**. With **Magic Design** and **bulk create**,
+you can generate hundreds of templates at once and sell them on Etsy or Creative Market.
+Top sellers pull **$2,000 a month** from Canva template packs alone."
+
+---
+
+TOOL 3 — ELEVENLABS (38–52s):
+"Number three: **ElevenLabs**. Clone any voice, narrate **audiobooks**,
+and sell the service as a **freelancer**.
+Voice-over artists using ElevenLabs bill **$80 to $150 an hour** for AI-generated audio."
+
+---
+
+TOOL 4 — SUNO AI (52–64s):
+"Number four: **Suno AI**. It generates full songs from a text prompt.
+People license AI music for **YouTube videos**, **ads**, and **podcasts**.
+Some creators pull **$300 to $800 a month** in music royalties alone."
+
+---
+
+TOOL 5 — PERPLEXITY (64–74s):
+"And number five: **Perplexity**.
+A deep research engine that replaces **hours of Googling**.
+Sell **research reports** to small businesses,
+or build niche content sites paying **$15 to $30 per thousand views**."
+
+---
+
+OUTRO (74–80s):
+"Follow now. Every single day you get one tool, one niche,
+and exactly how to make money with it."
+
+---
+
+TOTAL ESTIMATED DURATION : ~80 seconds
+HIGHLIGHTED WORDS FORMAT : **word** → yellow caption text + yellow chip on slides
+VOICE                    : espeak-ng + mbrola-en1 (British English, 138 wpm)
+SUBTITLES                : ASS format with scripthook yellow highlights
