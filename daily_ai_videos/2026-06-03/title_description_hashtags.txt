@@ -1,0 +1,21 @@
+TITLE OPTIONS
+=============
+1. Microsoft just open-sourced Windows AI agents, and Anthropic filed for its IPO
+2. 3 AI updates today that actually matter for developers (June 3)
+3. AI news June 3: Microsoft cuts OpenAI, Anthropic goes public, supply chain scanner drops
+
+DESCRIPTION
+===========
+Three real AI updates from today, June 3, 2026:
+
+1. Microsoft Build 2026 — Windows Agent Framework open-sourced (MIT license), Project Polaris replaces GPT-4 in GitHub Copilot by August, Foundry Local hits GA for on-device inference.
+
+2. Anthropic files confidential IPO with the SEC targeting October — and Claude Mythos expands to 150 orgs across 15 countries, finding 10,000+ critical vulnerabilities in critical infrastructure.
+
+3. GitHub repo of the day: Bumblebee by Perplexity AI — a Go-based supply chain scanner with zero dependencies that checks your packages, MCP servers, and editor extensions.
+
+Follow for daily AI tools, repos, and automation updates.
+
+HASHTAGS (max 10)
+=================
+#AINews #MicrosoftBuild #WindowsAgents #Anthropic #ClaudeMythos #GitHubRepos #AITools #OpenSource #DeveloperTools #AIUpdate

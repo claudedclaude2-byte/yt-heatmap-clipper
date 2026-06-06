@@ -1,0 +1,129 @@
+1
+00:00:00,000 --> 00:00:03,819
+Three things happened in AI today,
+and one
+
+2
+00:00:03,819 --> 00:00:07,821
+of them could change how you build
+software.
+
+3
+00:00:07,821 --> 00:00:12,942
+At Microsoft Build, the company
+open-sourced the Windows
+
+4
+00:00:12,942 --> 00:00:17,606
+Agent Framework under an MIT
+license. Any developer
+
+5
+00:00:17,606 --> 00:00:22,087
+can now build autonomous agents
+that run natively
+
+6
+00:00:22,087 --> 00:00:26,659
+on Windows, no Azure required.
+They also announced
+
+7
+00:00:26,659 --> 00:00:31,506
+Project Polaris, Microsoft's own
+AI model, which will
+
+8
+00:00:31,506 --> 00:00:36,261
+replace GPT-4 in GitHub Copilot
+starting August. And
+
+9
+00:00:36,261 --> 00:00:41,474
+Foundry Local hit general
+availability: full AI inference
+
+10
+00:00:41,474 --> 00:00:44,949
+on-device, without touching the
+cloud.
+
+11
+00:00:44,949 --> 00:00:49,613
+Anthropic quietly filed a
+confidential IPO with the
+
+12
+00:00:49,613 --> 00:00:53,272
+SEC, targeting a listing in
+October at a
+
+13
+00:00:53,272 --> 00:00:57,753
+valuation near a trillion dollars.
+But the bigger
+
+14
+00:00:57,753 --> 00:01:02,600
+story is Claude Mythos. Anthropic
+just expanded their
+
+15
+00:01:02,600 --> 00:01:08,362
+cybersecurity AI to 150
+organizations across fifteen
+countries,
+
+16
+00:01:08,362 --> 00:01:13,301
+covering power grids, hospitals,
+and water systems. In
+
+17
+00:01:13,301 --> 00:01:18,696
+early testing, Mythos found over
+ten thousand high-severity
+
+18
+00:01:18,696 --> 00:01:21,897
+vulnerabilities that humans
+missed.
+
+19
+00:01:21,897 --> 00:01:26,651
+And the GitHub repo worth checking
+today: Bumblebee,
+
+20
+00:01:26,651 --> 00:01:30,765
+by Perplexity AI. It's a supply
+chain scanner
+
+21
+00:01:30,765 --> 00:01:35,153
+written in Go with zero
+dependencies that checks
+
+22
+00:01:35,153 --> 00:01:39,998
+your packages, MCP servers, and
+editor extensions for
+
+23
+00:01:39,998 --> 00:01:45,209
+suspicious or compromised code.
+With supply chain attacks
+
+24
+00:01:45,209 --> 00:01:48,957
+on the rise, this one is actually
+useful.
+
+25
+00:01:48,957 --> 00:01:53,331
+Follow for daily AI tools, repos,
+and automation
+
+26
+00:01:53,331 --> 00:01:55,699
+updates dropped every day.

@@ -1,0 +1,6 @@
+*.pyc
+__pycache__/
+_frames/
+narration_raw.wav
+*.TEMP_MPY_wvf_snd.mp4
+.env
