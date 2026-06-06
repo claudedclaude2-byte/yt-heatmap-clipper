@@ -1,0 +1,87 @@
+DAILY AI VIDEO SCRIPT — June 6, 2026 (v2 — REVISED: Copilot Controversy Angle)
+================================================================================
+NICHE   : AI Coding Tools × Developer Controversy ($15–22 CPM)
+FORMAT  : 9:16 Vertical (YouTube Shorts / TikTok / Reels)
+RUNTIME : ~82 seconds
+FEATURE : scripthook — **highlighted keywords** → yellow captions + slide chips
+
+WHY THIS ANGLE TODAY (pivoted from generic "5 AI tools")
+---------------------------------------------------------
+• GitHub Copilot switched to token billing June 1 → devs reporting $29 → $750+/month
+• "GitHub Copilot alternatives" search volume spiking RIGHT NOW — peak recency
+• Controversy hooks drive 3–5× higher CTR than generic list videos
+• Developer audience CPM: $15–22 (same tier, sharper search intent)
+• Evergreen alternative-tools content → long replay shelf life
+• Story has legs: TechCrunch, Dev.to, GitHub Discussions all lit up this week
+
+
+HOOK (0–5s):
+"**GitHub Copilot** just went from **$29** to **$750 a month**. Here are **5 completely free** AI coding tools that do the same thing."
+
+---
+
+TOOL 1 — CODEIUM (5–22s):
+"Number one: **Codeium** — **free forever** for individual developers.
+It autocompletes code in **70 different editors** including VS Code and JetBrains,
+has a **1 million token** context window, and over **800,000 developers**
+have already switched away from Copilot."
+
+---
+
+TOOL 2 — CONTINUE.DEV (22–37s):
+"Number two: **Continue.dev**. It's **open-source** and self-hosted —
+**no subscription, no token billing, no data leaving your machine**.
+Plug in any model — Claude, GPT-4, Llama —
+and you have a **private Copilot** running entirely inside VS Code."
+
+---
+
+TOOL 3 — CLAUDE AI FREE TIER (37–52s):
+"Number three: **Claude by Anthropic**, **free tier**.
+It handles full files, complex refactors, and **architecture reviews**
+that Copilot can't touch.
+Paste your entire codebase, describe the bug — Claude gives you the fix.
+**No IDE plugin, no token bill.**"
+
+---
+
+TOOL 4 — AMAZON Q DEVELOPER (52–65s):
+"Number four: **Amazon Q Developer** — **free for individuals**, forever.
+Inline code completions, CLI assistance, and **security vulnerability scans**.
+If you're in the **AWS ecosystem**, this is an immediate swap."
+
+---
+
+TOOL 5 — TABNINE FREE (65–77s):
+"And number five: **Tabnine**. Runs **locally on your machine** — no cloud,
+no token costs, ever. Lightweight, private, supports every major language.
+**Your code never leaves your computer.**"
+
+---
+
+OUTRO (77–83s):
+"Follow now — every single day you get one tool, one niche,
+and exactly how to use it."
+
+---
+
+TOTAL ESTIMATED DURATION : ~83 seconds
+HIGHLIGHTED WORDS FORMAT : **word** → yellow caption text + yellow chip on slides
+VOICE                    : espeak-ng + mbrola-en1 (British English, 138 wpm)
+SUBTITLES                : ASS format with scripthook yellow highlights
+
+WHY THESE 5 TOOLS
+------------------
+Codeium      — Largest free Copilot replacement by user count; most direct swap
+Continue.dev — Open-source → zero cost ceiling; appeals to privacy-conscious devs
+Claude free  — Best reasoning for complex code; different strength to Copilot
+Amazon Q     — Free forever, official AWS product; credibility + trust signal
+Tabnine      — Local-only option; privacy angle differentiates from other 4
+
+SOURCES
+-------
+• Copilot billing change: techcrunch.com/2026/05/30 + github.com/orgs/community/discussions/192948
+• Codeium free tier: codeium.com/pricing
+• Continue.dev: continue.dev (MIT licence, open-source)
+• Amazon Q Developer free: aws.amazon.com/q/developer
+• Tabnine free: tabnine.com/pricing

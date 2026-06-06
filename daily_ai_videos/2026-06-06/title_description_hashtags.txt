@@ -1,0 +1,74 @@
+TITLE OPTIONS
+=============
+1. GitHub Copilot Now Costs $750/Month — These 5 FREE Alternatives Are Better
+2. GitHub Copilot Just Broke Every Developer's Budget (Use These Instead — Free)
+3. 5 FREE AI Coding Tools That Replace GitHub Copilot Right Now
+
+RECOMMENDED: Option 1 — controversy keyword "GitHub Copilot" + "$750" + "free" + "better"
+             Emotion (shock) + clear benefit + keyword match on trending searches
+             Expected CTR lift vs. generic "5 AI tools": 3–5×
+
+THUMBNAIL CONCEPT (redesign from previous Canva drafts)
+=======================================================
+Left half: GitHub Copilot logo with red ❌ + "$750/mo" in red
+Right half: "5 FREE TOOLS" in large yellow text on dark background
+Bottom strip: logos of Codeium, Continue, Claude, Amazon Q, Tabnine
+
+Previous Canva designs (for reference — redesign these with new concept):
+  Option A: https://www.canva.com/d/U4me9CJrNnrJTO-
+  Option B: https://www.canva.com/d/sYZVDq3yIhbYBIo
+  Option C: https://www.canva.com/d/ppAjf2heWmUHCph
+  Option D: https://www.canva.com/d/p9KiJYt99w2jhEx
+
+DESCRIPTION
+===========
+GitHub Copilot switched to token-based billing on June 1, 2026 — and developers are furious. Some are reporting their costs jumped from $29/month to $750/month or more.
+
+Here are 5 completely FREE AI coding tools that replace Copilot today:
+
+✅ #1 — Codeium (codeium.com)
+Free forever for individuals. Works in 70+ editors. 1M token context. 800K+ devs already switched.
+
+✅ #2 — Continue.dev (continue.dev)
+Open-source, self-hosted. Plug in any model — Claude, GPT-4, Llama. Your code never leaves your machine. $0/month, forever.
+
+✅ #3 — Claude AI Free Tier (claude.ai)
+Full-file refactors, architecture reviews, complex debugging — paste your entire codebase. No IDE plugin needed, no token bill.
+
+✅ #4 — Amazon Q Developer (aws.amazon.com/q/developer)
+Free for individuals, forever. Inline completions, CLI assistance, security vulnerability scanning.
+
+✅ #5 — Tabnine (tabnine.com)
+Runs 100% locally. No cloud, no token costs, ever. Supports every major language. Your code never leaves your computer.
+
+🔔 Follow — every single day you get one tool and exactly how to use it.
+
+📌 Sources:
+• TechCrunch: techcrunch.com/2026/05/30
+• GitHub Discussion: github.com/orgs/community/discussions/192948
+
+HASHTAGS (max 10)
+=================
+#GitHubCopilot #AITools #CodingTools #FreeCodingAI #Codeium #AIForDevelopers #CopilotAlternative #AICoding #DevTools #SoftwareDevelopment
+
+WHY THESE HASHTAGS
+==================
+#GitHubCopilot   — trending story, high search intent RIGHT NOW
+#Codeium         — brand search that's spiking
+#CopilotAlternative — long-tail but zero competition today
+#AIForDevelopers — developer niche = $15–22 CPM
+Dropped #MakeMoneyOnline — wrong audience for developer-tools video
+
+POSTING SCHEDULE
+================
+Best upload times (UTC): 07:00, 12:00, 18:00, 21:00
+Today's recommended slot: 18:00 UTC — Friday evening, developers unwinding
+Platforms: YouTube Shorts + TikTok + Instagram Reels
+
+ANALYSIS: WHY THIS VIDEO TODAY
+===============================
+• Original "5 free AI tools $500/day" concept: strong niche but saturated format
+• This pivot: same format + trending controversy + specific search intent spike
+• GitHub Copilot story broke June 1 → still peak virality window today (June 6)
+• Developer CPM $15–22 matches Make Money Online; no meaningful tradeoff
+• Controversy + "free" = two of the highest-performing emotional triggers for Shorts
