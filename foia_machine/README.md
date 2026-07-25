@@ -6,20 +6,27 @@ these files are meant to be copied into the local system's working directory.
 
 ## Layout
 
-- `agencies/agencies.json` — agency directory (49 agencies: 15 local, 26 state, 5 federal, 3
+- `agencies/agencies.json` — agency directory (54 agencies: 15 local, 26 state, 5 federal, 8
   foreign): jurisdiction, statute, fee-waiver citation, submission channel. The original 19 came
-  from confirmed correspondence; 30 more were added via `WebSearch` against each agency's
-  official .gov site (Jul 2026) in two rounds — round one covered state police for
+  from confirmed correspondence; 35 more were added via `WebSearch` against official sources
+  (Jul 2026) in three rounds — round one covered state police for
   OH/PA/NY/FL/GA/WA/AZ/NC/CO/MA/MN plus federal ATF/US Marshals/CBP; round two added
   VA/NJ/IN/TN/WI/OR/NV/MD state police, four major city PDs (LAPD, Houston, Philadelphia,
-  Seattle), and SC/OK/LA/CT. Their `notes` field says "Verified via ... Jul 2026" and cites the
-  source site. All 30 intentionally leave `fee_waiver_citation: null`: the statute name/citation
-  is confirmed, but the specific fee-waiver subsection wasn't independently verified, so don't
-  cite one in an appeal until it's added to `appeals_playbook.md`. A few (`sc-sled`) had a
-  contact email come back masked/obfuscated by the source page — those are marked
-  `unknown-verify` rather than guessing at the real address. `mailing_address` is `null` unless
-  explicitly confirmed — verify before mailing anything. Three entries are marked
-  `level: "foreign"` (Quebec, Costa Rica, Jordan) and explicitly do **not** use FOIA.
+  Seattle), and SC/OK/LA/CT; round three added five non-US jurisdictions (Mexico, Spain, France,
+  Germany, Brazil) with native-language templates in `templates/intl/`. Their `notes` field says
+  "Verified via ... Jul 2026" and cites the source. Most of round two/three intentionally leave
+  `fee_waiver_citation: null` and/or `submission_method: "unknown-verify"`: the statute is
+  confirmed, but the specific fee-waiver subsection or exact intake address wasn't independently
+  verified, so don't guess — check `appeals_playbook.md` or the agency's current site first. A
+  few (`sc-sled`) had a contact email come back masked/obfuscated by the source page. The five
+  round-three foreign entries needed extra care: **Mexico's INAI was dissolved** in the
+  Nov 2024–Mar 2025 constitutional reform (its functions moved to a new body with narrower appeal
+  rights — citing INAI today would itself be a wrong-citation mistake), and **Spain/France's only
+  confirmed contacts (CTBG, CADA) are appeals/oversight bodies, not initial-request intake** — do
+  not send a first request to either of them. `mailing_address` is `null` unless explicitly
+  confirmed — verify before mailing anything. Eight entries are marked `level: "foreign"`
+  (Quebec, Costa Rica, Jordan, Mexico, Spain, France, Germany, Brazil) and explicitly do **not**
+  use FOIA.
 - `templates/` — letter templates for each stage of a request:
   - `request_initial.md` — first request
   - `appeal_fee_waiver_federal.md` / `appeal_fee_waiver_state.md` — fee waiver / denial appeals
@@ -28,6 +35,11 @@ these files are meant to be copied into the local system's working directory.
   - `ag_complaint_escalation.md` — escalate to a state AG / oversight body after a missed deadline
   - `foreign_jurisdiction_clarification.md` — correct a prior message that wrongly cited U.S.
     FOIA against a non-U.S. agency (this has actually happened twice — see appeals_playbook.md)
+  - `intl/` — native-language initial-request templates for non-US jurisdictions:
+    `mexico_solicitud_es.md`, `spain_solicitud_es.md`, `france_demande_fr.md`,
+    `germany_antrag_de.md`, `brazil_solicitacao_pt.md`. Each has a comment block at the top
+    explaining that country's correct submission channel — several of these are portal/form-only,
+    not open email, so don't improvise a recipient address.
 - `docs/appeals_playbook.md` — statute/fee-waiver/precedent/escalation-path table by
   jurisdiction, pulled from appeals actually filed. Fill template placeholders from this table,
   not from memory.

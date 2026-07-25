@@ -26,6 +26,11 @@ improvise a citation for a jurisdiction not listed here without independently ve
 | Quebec, Canada | Act respecting Access to documents held by public bodies, CQLR c A-2.1 | Prior mistake: cited FOIA in error, corrected in thread VQ-26-2815 |
 | Costa Rica | Ley No. 8220 | Prior mistake: cited FOIA in error, corrected twice in thread CR-3244-20260719 |
 | Jordan | Verify Jordan's own access law before citing anything | Flagged risk of repeating the Costa Rica/Quebec mistake in thread JO-3199-20260719 |
+| Mexico | LGTAIP -- but do NOT cite INAI. INAI was dissolved by the Nov 28, 2024 constitutional reform; functions moved to "Transparencia para el Pueblo" (Secretaria Anticorrupcion y Buen Gobierno), effective Mar 21, 2025, with narrower appeal rights | No current intake contact confirmed yet -- verify via gob.mx before sending anything; check whether the incident needs a state Fiscalia instead of the federal body |
+| Spain | Ley 19/2013, Art. 17.2 | Send initial requests to the agency holding the records (e.g. Ministerio del Interior) via transparencia.gob.es. `ctbg@consejodetransparencia.es` is CONFIRMED but is the appeals/oversight body only -- do not send an initial request there |
+| France | Code des relations entre le public et l'administration (CRPA), Livre III, Titre Ier | Initial requests go directly to the administration/prefecture holding the documents. CADA (cada.fr) is appeals-only, filed within 2 months of a refusal, free |
+| Germany | Informationsfreiheitsgesetz (IFG) -- federal only | Most policing is state (Land) business with its own separate information-freedom law -- confirm federal (Bundespolizei: borders/rail/aviation) vs. state jurisdiction before picking a statute |
+| Brazil | Lei de Acesso a Informacao (LAI), Lei 12.527/2011 | Submitted per-agency via e-SIC portals, not open email. Policia Federal has its own e-SIC (gov.br/pf); each state's Policia Militar has a SEPARATE e-SIC -- don't default to the federal PF portal for a state incident |
 
 Before sending any appeal to a jurisdiction not in the top table, add it here first with a
 verified citation -- don't reuse the federal template against a state or foreign agency.

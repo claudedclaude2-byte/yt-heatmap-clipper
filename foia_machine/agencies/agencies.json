@@ -690,6 +690,76 @@
       "portal_type": null,
       "mailing_address": "DESPP Reports and Records Division, Middletown, CT",
       "notes": "Verified via portal.ct.gov / MuckRock, Jul 2026, phone (860) 685-8480. Requests can be made by letter or email but no specific address was confirmed -- call to confirm. Escalation: Connecticut Freedom of Information Commission, foi@ct.gov, (860) 566-5682 -- a genuinely useful appeals contact, unlike most states which lack a dedicated FOI commission."
+    },
+    {
+      "id": "mx-transparencia",
+      "name": "Mexico -- national transparency body (post-INAI)",
+      "jurisdiction": "Mexico",
+      "level": "foreign",
+      "statute": "NOT FOIA -- Ley General de Transparencia y Acceso a la Informacion Publica",
+      "statute_citation": "LGTAIP (reformed by the Nov 28, 2024 constitutional reform; INAI's functions transferred to a new body, 'Transparencia para el Pueblo', under the Secretaria Anticorrupcion y Buen Gobierno, effective Mar 21, 2025)",
+      "fee_waiver_citation": null,
+      "submission_method": "unknown-verify",
+      "submission_email": null,
+      "portal_type": null,
+      "mailing_address": null,
+      "notes": "IMPORTANT: INAI (Instituto Nacional de Transparencia) no longer exists -- do not cite it or address correspondence to it. Its functions moved to 'Transparencia para el Pueblo' in 2025, with narrower appeal rights (only federal-public-funds cases; no more constitutional-controversy actions). No current intake email/portal was confirmed in this research pass -- identify the correct current contact via gob.mx before drafting anything, and confirm whether the request should instead go to a state-level Fiscalia if the incident is state/local police, since federal transparency bodies do not necessarily cover state police."
+    },
+    {
+      "id": "es-transparencia",
+      "name": "Spain -- Ministerio del Interior (records holder) / Consejo de Transparencia y Buen Gobierno (oversight)",
+      "jurisdiction": "Spain",
+      "level": "foreign",
+      "statute": "NOT FOIA -- Ley 19/2013, de transparencia, acceso a la informacion publica y buen gobierno",
+      "statute_citation": "Ley 19/2013, de 9 de diciembre, Art. 17.2",
+      "fee_waiver_citation": null,
+      "submission_method": "portal",
+      "submission_email": null,
+      "portal_type": "Portal de Transparencia (transparencia.gob.es) -- requests go to the agency holding the records, e.g. Ministerio del Interior, not to the oversight body",
+      "mailing_address": null,
+      "notes": "ctbg@consejodetransparencia.es (Consejo de Transparencia y Buen Gobierno) is CONFIRMED but is the appeals/oversight body, not an initial-request intake -- do not send a first request there. Initial requests must be directed to the specific ministry/agency holding the records via the Portal de Transparencia. Identify the correct sub-office once there is a specific incident."
+    },
+    {
+      "id": "fr-cada",
+      "name": "France -- Commission d'acces aux documents administratifs (CADA, appeals) / prefecture de police (records holder)",
+      "jurisdiction": "France",
+      "level": "foreign",
+      "statute": "NOT FOIA -- Code des relations entre le public et l'administration (droit d'acces aux documents administratifs)",
+      "statute_citation": "CRPA, Livre III, Titre Ier",
+      "fee_waiver_citation": null,
+      "submission_method": "unknown-verify",
+      "submission_email": null,
+      "portal_type": "cada.fr (formulaire de saisine) -- CADA only, mandatory before any legal challenge, must be filed within 2 months of a refusal",
+      "mailing_address": null,
+      "notes": "CADA is an appeals/mediation body, NOT where an initial request goes -- initial requests go directly to the administration holding the documents (e.g. the relevant prefecture de police for a local incident). No confirmed direct email for CADA itself was found (site offers a web form); do not guess one. Filing with CADA is free and required before contentious proceedings, but only after an initial request has already been refused or ignored."
+    },
+    {
+      "id": "de-ifg",
+      "name": "Germany -- federal agency IFG contact (varies by agency, e.g. Bundespolizei)",
+      "jurisdiction": "Germany",
+      "level": "foreign",
+      "statute": "NOT FOIA -- Informationsfreiheitsgesetz (IFG)",
+      "statute_citation": "IFG (Bund)",
+      "fee_waiver_citation": null,
+      "submission_method": "unknown-verify",
+      "submission_email": null,
+      "portal_type": null,
+      "mailing_address": null,
+      "notes": "IFG requests can be informal -- email, phone, or in writing -- and are typically free for simple requests, answered within one month. No specific Bundespolizei IFG contact address was confirmed in this pass; each federal agency publishes its own IFG contact page (see bundespolizei.de). Also note: most day-to-day policing in Germany is a Land (state) matter, not federal -- Bundespolizei only covers borders/rail/aviation, so a request about a specific incident likely needs the relevant state police force's own IFG-equivalent (each Land has its own information-freedom law, not all identical to the federal IFG)."
+    },
+    {
+      "id": "br-lai-pf",
+      "name": "Brazil -- Policia Federal, SIC (Servico de Informacao ao Cidadao)",
+      "jurisdiction": "Brazil",
+      "level": "foreign",
+      "statute": "NOT FOIA -- Lei de Acesso a Informacao (LAI)",
+      "statute_citation": "Lei 12.527/2011",
+      "fee_waiver_citation": null,
+      "submission_method": "portal",
+      "submission_email": null,
+      "portal_type": "e-SIC (gov.br/pf/pt-br/acesso-a-informacao/SIC) -- Policia Federal only",
+      "mailing_address": null,
+      "notes": "Verified via gov.br/pf and techtudo.com.br, Jul 2026. This entry covers federal police (Policia Federal) only. Most incidents involving Policia Militar are STATE jurisdiction with their own separate SIC portal per state (e.g. PMDF for Distrito Federal at portal.pm.df.gov.br) -- identify the correct state's SIC before filing, don't default to the federal PF portal for a state Policia Militar incident."
     }
   ]
 }
