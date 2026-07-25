@@ -1,0 +1,44 @@
+{
+  "requests": [
+    {
+      "reference": "P022651-071726",
+      "agency": "Kalamazoo Department of Public Safety",
+      "date_submitted": "2026-07-17",
+      "statutory_response_days": 5,
+      "extension_granted_days": 10,
+      "status": "tracking"
+    },
+    {
+      "reference": "FOIA #06359881",
+      "agency": "Illinois State Police",
+      "date_submitted": "2026-07-10",
+      "statutory_response_days": 5,
+      "extension_granted_days": 5,
+      "status": "tracking"
+    },
+    {
+      "reference": "MO-1061-20260717",
+      "agency": "O'Fallon Police Department",
+      "date_submitted": "2026-07-17",
+      "statutory_response_days": 3,
+      "extension_granted_days": 0,
+      "status": "tracking"
+    },
+    {
+      "reference": "S013214-072026",
+      "agency": "Polk County, Iowa",
+      "date_submitted": "2026-07-20",
+      "statutory_response_days": 10,
+      "extension_granted_days": 0,
+      "status": "tracking"
+    },
+    {
+      "reference": "P199307-071626",
+      "agency": "Chicago Police Department",
+      "date_submitted": "2026-07-16",
+      "statutory_response_days": 5,
+      "extension_granted_days": 0,
+      "status": "closed"
+    }
+  ]
+}
