@@ -6,10 +6,16 @@ these files are meant to be copied into the local system's working directory.
 
 ## Layout
 
-- `agencies/agencies.json` — agency directory: jurisdiction, statute, fee-waiver citation,
-  submission channel. Seeded only from agencies with confirmed correspondence; `mailing_address`
-  is `null` unless it was explicitly confirmed — verify before mailing anything. Three entries
-  are marked `level: "foreign"` (Quebec, Costa Rica, Jordan) and explicitly do **not** use FOIA.
+- `agencies/agencies.json` — agency directory (33 agencies: 11 local, 14 state, 5 federal, 3
+  foreign): jurisdiction, statute, fee-waiver citation, submission channel. The original 19 came
+  from confirmed correspondence; 14 more (state police for OH/PA/NY/FL/GA/WA/AZ/NC/CO/MA/MN plus
+  federal ATF/US Marshals/CBP) were added via web search against each agency's official .gov
+  site (Jul 2026) — their `notes` field says "Verified via ... Jul 2026" and cites the source
+  site. Those 14 intentionally leave `fee_waiver_citation: null`: the statute name/citation is
+  confirmed, but the specific fee-waiver subsection wasn't independently verified, so don't cite
+  one in an appeal until it's added to `appeals_playbook.md`. `mailing_address` is `null` unless
+  explicitly confirmed — verify before mailing anything. Three entries are marked
+  `level: "foreign"` (Quebec, Costa Rica, Jordan) and explicitly do **not** use FOIA.
 - `templates/` — letter templates for each stage of a request:
   - `request_initial.md` — first request
   - `appeal_fee_waiver_federal.md` / `appeal_fee_waiver_state.md` — fee waiver / denial appeals
