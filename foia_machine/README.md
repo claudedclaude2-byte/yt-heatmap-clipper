@@ -32,6 +32,14 @@ these files are meant to be copied into the local system's working directory.
   status, sorted most-urgent first.
 - `tracked_requests.sample.json` — example input for the tracker; replace with the machine's live
   tracked-requests export.
+- `scraper/verify_agency_contact.py` — Camoufox-based verifier: renders an agency's contact page
+  in a real (stealth) browser and pulls out `mailto:` links / emails, for cases where a plain
+  fetch or search snippet gets an obfuscated result (this happened with Arizona DPS below).
+  **Cannot run inside this repo's own claude-code-remote session** — that session's egress proxy
+  allowlists only pypi/npm/its own GitHub repo, so `camoufox fetch` can't download the browser
+  binary and even a plain `curl` to an arbitrary `.gov` site 403s. Run it somewhere with normal
+  internet access instead — e.g. wherever the FOIA Machine's own cron job runs. See
+  `scraper/requirements.txt` for setup.
 
 ## Extending
 
